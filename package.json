@@ -1,0 +1,21 @@
+{
+  "name": "tsc-files-types-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kylor Hall <kylor@kylorhall.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "typeCheck": "npx tsc --noEmit"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": "npx tsc-files --noEmit"
+  },
+  
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "tsc-files": "^1.1.3",
+    "typescript": "^4.5.2"
+  }
+}
